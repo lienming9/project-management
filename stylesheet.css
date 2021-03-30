@@ -1,0 +1,207 @@
+body{
+ background-color: #f8f8f8;
+ font-family: Arial;
+}
+
+.navbar-nav{ 
+ position: absolute; 
+ left: 50%; 
+ transform: translatex(-50%); 
+ z-index: 9999;
+} 
+
+.bg-custom{
+ background-color: #2596be;
+ height: 75px;
+}
+
+.navbar-brand{
+ margin-top: 20px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  opacity:0.9;
+}
+
+.navbar{
+  margin-bottom: auto;
+}
+
+h1 {
+  text-shadow: 2px 2px black;
+}
+
+h2{
+  margin-top: 2rem;
+}
+
+
+.featurette-heading{
+  margin-bottom: 1rem;
+}
+
+
+.about-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+.about-text{
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+ text-align: center;
+}
+
+
+.contact-detalis{
+  margin-top: 8rem;
+}
+
+.contact-text{
+  font-weight: 600;
+}
+
+
+.form-control{
+  margin-bottom: 1rem;
+}
+
+i.fa{
+ vertical-align: middle;  
+}
+
+.cd-text{
+ font-weight: 500;
+}
+
+.fa-mobile-alt{
+ color: #2596be;
+ margin-right: 0.5rem;
+}
+
+.fa-envelope{
+ color: #2596be;
+ margin-right: 0.5rem;
+}
+
+.fa-facebook{
+ color: #4267B2;
+}
+
+.fa-instagram{
+ color: #E1306C;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+ background-color: #2596be;
+ border-color: #2596be;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+ background-color: #2596be;
+ border-color: #2596be;
+
+
+}
+
+.btn, a.btn, .btn:hover, .btn:active, .btn:visited {
+ background-color: #2596be;
+ border-color:#2596be;
+ color: white;
+}
+
+.location-details{
+ margin-top: 6rem;
+ margin-right: auto;
+}
+
+.lo-text{
+ margin-top: 1rem;
+}
+
+.footer-basic {
+  padding:40px 0;
+  height:200px;
+  width:100%;
+  background-color:#ffffff;
+  color:#2596be;
+  margin-top: 120px;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+hr{
+ color: #2596be;
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+	z-index: 999;
+}
+
+.card{
+	margin: 15px;
+	
+	
+}
+
+
+
