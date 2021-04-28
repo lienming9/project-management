@@ -10,14 +10,16 @@
 
     <!--Custom Syle-->
     <link rel="stylesheet" href="css/stylesheet.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.shop.js"></script>
 
-    <title>Contact Us</title>
+    <title>Your shopping cart</title>
   </head>
   <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-custom">
   <div class="container-fluid">
-    <a href="#" class="navbar-brand">
+  <a href="#" class="navbar-brand">
             <img src="img/logo.png" width="200" alt="#">
         </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,69 +58,48 @@
 
   <!--Start Main Container-->
   <div class="container">
-
-      <!--Start Row-->
-      <div class="row">
-
-          <!--Start Col-->
-          <div class="col-md-8">
-		  
-           <h2>Contact Form</h2>
-		   <hr align="left">
-		   
-            <!--Start Form-->
-            <form name="contact" method="post">
-              <fieldset>
-                <div class="form-group">
-                  <label for="name" class="contact-text">First Name</label>
-                  <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" style="width: 450px;" required>
-                </div>
-				
-		<div class="form-group">
-                  <label for="name" class="contact-text">Last Name</label>
-                  <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" style="width: 450px;" required>
-                </div>
-				
-				
-		<div class="form-group">
-                  <label for="number" class="contact-text">Phone Number</label>
-	          <input type="number" name="phonenumber" class="form-control" id="phonenumber" placeholder="Phone Number"style="width: 450px;" required>
-                </div>
-
-                <div class="form-group">
-                  <label for="email" class="contact-text">Email Address</label>
-                  <input type="email" name="email" class="form-control" id="email" placeholder="email@example.com" style="width: 450px;" required>
-                </div>
-
-		  <div class="form-group">
-                  <label for="text" class="contact-text">Subject</label>
-		  <input type="text" name="subject" class="form-control" id="subject" placeholder=""style="width: 450px;" required>
-                </div>
-				
-                <div class="form-group">
-                  <label for="message" class="contact-text">Message</label>
-                  <textarea class="form-control input-sm " type="textarea" id="message" placeholder="Your message" maxlength="200" rows="7"></textarea>
-                </div>
-              </fieldset>
-
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-            <!--End Form-->
-          </div>
-          <!--End Col-->
-
-          <!--Start Column-->
-              <div class="contact-detalis d col-sm">
-              
-              <p class="cd-text"><i class="fas fa-mobile-alt fa-2x"></i>  +353 666 77 888</p>
-              <p class="cd-text"><i class="fas fa-envelope fa-2x"></i>  info@gmail.ie</p>
-
-          <!--End Column-->
-
-      </div>
-      <!--End Row-->
-
-  </div>
+  <h2>Shopping Cart</h2>
+  <hr style="width:300px">
+  
+	<div id="site">
+			<header id="masthead">
+				 <span class="tagline">
+			</header>
+	
+		<div id="content ">
+			<form id="shopping-cart" action="cart.html" method="get">
+				<table class="shopping-cart">
+				  <thead>
+					<tr>
+						<th scope="col">Item</th>
+						<th scope="col">Qty</th>
+						<th scope="col" colspan="2">Price</th>
+					</tr>
+				  </thead>
+				  <tbody>
+				  
+				  </tbody>
+				</table>
+				<p id="sub-total">
+					<strong>Sub Total</strong>: <span id="stotal"></span>
+				</p>
+				<ul id="shopping-cart-actions">
+					<li>
+						<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+					</li>
+					<li>
+						<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+					</li>
+					<li>
+						<a href="Sells.html" id="update-cart"class="btn">Continue Shopping</a>
+					</li>
+					<li>
+						<a href="checkout.html" id="update-cart" class="btn">Go To Checkout</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
   <!--End Main Container-->
         
 
@@ -149,4 +130,3 @@
 
 </body>
 </html>
-

@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.shop.js"></script>
-
-    <title>Sells</title>
+	
+    <title>About Us</title>
   </head>
   <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-custom">
   <div class="container-fluid">
-    <a href="#" class="navbar-brand">
+  <a href="#" class="navbar-brand">
             <img src="img/logo.png" width="200" alt="#">
         </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,94 +58,116 @@
 
   <!--Start Main Container-->
   <div class="container">
-  <h2>Sells</h2>
-  <hr style="width:300px">
+
   
-	<div id="site">
-		<header id="masthead">
-			<span class="tagline">
-		</header>
-
-      <!-- Main Content -->
-
-      <div class="row my-row">
-        <div class="col-sm-12 col-md-6 col-lg-3 boxes my-col">
-          <div class="card">
-            <img src="img/powder.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="product-description" data-name="Gold Protein Powder" data-price="49">
-					<h3 class="product-name">Gold Protein Powder</h3>
-					<p class="product-price">&euro; 49</p>
-					<form class="add-to-cart" action="cart.html" method="get">
-						<div>
-							<label for="qty-1">Quantity</label>
-							<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-						</div>
-							<p><input type="submit" value="Add to cart" class="btn text-white" /></p>
-					</form>
-				</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 boxes my-col">
-          <div class="card">
-            <img src="img/powder1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="product-description" data-name="Cyclone Protein Powder" data-price="59">
-					<h3 class="product-name">Cyclone Protein Powder</h3>
-					<p class="product-price">&euro; 59</p>
-					<form class="add-to-cart" action="cart.html" method="get">
-						<div>
-							<label for="qty-1">Quantity</label>
-							<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-						</div>
-							<p><input type="submit" value="Add to cart" class="btn text-white" /></p>
-					</form>
-				</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 boxes my-col">
-          <div class="card">
-            <img src="img/powder2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="product-description" data-name="Protein Powder" data-price="59">
-					<h3 class="product-name">Protein Powder</h3>
-					<p class="product-price">&euro; 59</p>
-					<form class="add-to-cart" action="cart.html" method="get">
-						<div>
-							<label for="qty-3">Quantity</label>
-							<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
-						</div>
-							<p><input type="submit" value="Add to cart" class="btn text-white" /></p>
-					</form>
-				</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 boxes my-col">
-          <div class="card">
-            <img src="img/powder3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="product-description" data-name="Mass Gainer" data-price="65">
-					<h3 class="product-name">Mass Gainer</h3>
-					<p class="product-price">&euro; 65</p>
-					<form class="add-to-cart" action="cart.html" method="get">
-						<div>
-							<label for="qty-3">Quantity</label>
-							<input type="text" name="qty-4" id="qty-4" class="qty" value="1" />
-						</div>
-							<p><input type="submit" value="Add to cart" class="btn text-white" /></p>
-					</form>
-				</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        
+		<div id="site">
+			<header id="masthead">
+				 <span class="tagline">
+			</header>
+	
+	
+<div id="content">
+		<h2><center>Checkout</center></h2>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <form action="order.html" method="get" id="checkout-order-form">
+		 	<h2>Your Details</h2>
+		 	
+		 	<fieldset id="fieldset-billing">
+		 		<legend>Billing</legend>
+		 		<div>
+		 			<label for="name">Name</label>
+		 			<input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="email">Email</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="city">City</label>
+		 			<input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Address</label>
+		 			<input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="zip">ZIP Code</label>
+		 			<input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="country">Country</label>
+		 			<select name="country" id="country" data-type="string" data-message="This field cannot be empty">
+		 				<option value="">Select</option>
+						<option value="IT">Ireland</option>
+						<option value="IT">United Kindom</option>
+						
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<div id="shipping-same">Same as Billing <input type="checkbox" id="same-as-billing" value=""/></div>
+		 	
+		 	<fieldset id="fieldset-shipping">
+		 		
+		 		<legend>Shipping</legend>
+		 		
+		 		<div>
+		 			<label for="sname">Name</label>
+		 			<input type="text" name="sname" id="sname" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="semail">Email</label>
+		 			<input type="text" name="semail" id="semail" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="scity">City</label>
+		 			<input type="text" name="scity" id="scity" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="saddress">Address</label>
+		 			<input type="text" name="saddress" id="saddress" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="szip">ZIP Code</label>
+		 			<input type="text" name="szip" id="szip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="scountry">Country</label>
+		 			<select name="scountry" id="scountry" data-type="string" data-message="This field cannot be empty">
+		 				<option value="">Select</option>
+		 				<option value="US">Ireland</option>
+		 				<option value="IT">Italy</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<p><input type="submit" id="submit-order" value="Submit" class="btn btn-primary" /></p>
+		 
+		 </form>
 </div>
-
+</div>
   <!--End Main Container-->
         
 
